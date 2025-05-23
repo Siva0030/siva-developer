@@ -5,6 +5,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Siva's Resume</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 30px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h3 {
+            color: #34495e;
+        }
+
+        ul,
+        ol {
+            padding-left: 20px;
+            margin: 10px;
+
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 15px;
+            border: 1px solid #ccc;
+            max-width: 600px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            /* horizontal center */
+            align-items: center;
+            /* vertical center */
+            height: 200px;
+            border: 2px dashed gray;
+        }
+
+        .box {
+            background-color: skyblue;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .projects {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            flex: 1;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,32 +106,39 @@
     <h3>Frontend developer</h3>
     <hr />
     <h3>About Me</h3>
-    <p> I am a passionate frontend developer learning web technologies set by step</p>
+    <p> I am a passionate frontend developer learning web technologies setp by step</p>
     <h3>Skills</h3>
     <ul>
         <li>HTML</li>
         <li>CSS</li>
-        <li>JAVASCRIPT</li>
-        <li>REACT</li>
+        <li>JavaScript</li>
+        <li>React Js</li>
+        <li>Redux Toolkit</li>
+        <li>Git</li>
     </ul>
     <h3>Projects</h3>
-    <ol>
-        <li>Basic Resume in HTML</li>
-        <li>Todo List APP (upcoming)</li>
-        <li>Weather App (API) - coming soon</li>
+    <ol class="projects">
+        <li class="project-card">Basic Resume in HTML</li>
+        <li class="project-card">Todo List APP (upcoming)</li>
+        <li class="project-card">Weather App (API) - coming soon</li>
     </ol>
-    <h3>Constact</h3>
-    <p>Email: <a href="siva@gmail.com">siva@gmail.com</a></p>
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:siva@gmail.com">siva@gmail.com</a></p>
     <h3>Contact Form</h3>
     <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" /> <br /><br />
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" /> <br /> <br />
-        <label for="Message">Message</label>
-        <textarea id="Message" name="message"></textarea> <br /><br />
+        <label for="Message">Message:</label>
+        <textarea id="Message" name="Message"></textarea> <br /><br />
         <button type="submit">send</button>
     </form>
+    <br />
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+    </div>
 
 </body>
 
